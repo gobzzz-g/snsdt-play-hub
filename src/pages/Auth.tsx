@@ -84,7 +84,7 @@ const Auth = () => {
           if (roleError) console.error("Role assignment error:", roleError);
         }
 
-        toast({ title: "Account created!", description: "Welcome to DTM Mentor Forge" });
+        toast({ title: "Account created!", description: "Welcome to SnsDt PlayHub" });
         navigate("/dashboard");
       }
     } catch (error: any) {
@@ -111,7 +111,7 @@ const Auth = () => {
         <div className="flex items-center justify-center mb-8">
           <Zap className="w-12 h-12 text-primary animate-glow-pulse" />
           <h1 className="text-3xl font-bold ml-3 bg-gradient-hero bg-clip-text text-transparent">
-            DTM Mentor Forge
+            SnsDt PlayHub
           </h1>
         </div>
 

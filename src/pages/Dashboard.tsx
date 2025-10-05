@@ -72,7 +72,7 @@ const Dashboard = () => {
           <div className="flex items-center gap-3">
             <Gamepad2 className="w-8 h-8 text-primary animate-glow-pulse" />
             <h1 className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-              DTM Mentor Forge
+              SnsDt PlayHub
             </h1>
           </div>
 
