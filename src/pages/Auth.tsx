@@ -14,7 +14,7 @@ const authSchema = z.object({
   email: z.string().email("Invalid email address"),
   password: z.string().min(6, "Password must be at least 6 characters"),
   fullName: z.string().min(2, "Name must be at least 2 characters").optional(),
-  role: z.enum(["admin", "floor_mentor", "mentor"]).optional(),
+  role: z.enum(["admin", "floor_mentor", "mentor", "student"]).optional(),
 });
 
 const Auth = () => {
@@ -22,7 +22,7 @@ const Auth = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
-  const [role, setRole] = useState<"admin" | "floor_mentor" | "mentor">("mentor");
+  const [role, setRole] = useState<"admin" | "floor_mentor" | "mentor" | "student">("student");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -165,6 +165,7 @@ const Auth = () => {
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
+                  <SelectItem value="student">Student</SelectItem>
                   <SelectItem value="mentor">Mentor</SelectItem>
                   <SelectItem value="floor_mentor">Floor Mentor</SelectItem>
                   <SelectItem value="admin">Admin</SelectItem>
