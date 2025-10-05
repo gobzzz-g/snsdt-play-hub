@@ -19,7 +19,7 @@ const Index = () => {
         <div className="text-center mb-16 animate-slide-in-up">
           <Zap className="w-24 h-24 text-primary mx-auto mb-6 animate-glow-pulse" />
           <h1 className="text-6xl md:text-7xl font-bold bg-gradient-hero bg-clip-text text-transparent mb-6">
-            DTM Mentor Forge
+            SnsDt PlayHub
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             The ultimate hackathon platform for interactive mentoring and competitive gaming
